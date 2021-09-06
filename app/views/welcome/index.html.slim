@@ -1,0 +1,30 @@
+div class="collapse" id="navbarToggleExternalContent" data-controller="welcome"
+  div class="bg-success p-4"
+    h5 class="text-white h4" Rails Basecamp
+nav class="navbar navbar-dark bg-success"
+  div class="container-fluid"
+    button[
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarToggleExternalContent"
+      aria-controls="navbarToggleExternalContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    ]
+      span class="navbar-toggler-icon"
+    a href="#{destroy_user_session_path}" data-method="delete" class="nav-link text-white"
+      i class="bi bi-lock"
+      span.ms-2 Logout
+main
+  section class="py-5 text-center container"
+    div class="row py-lg-5"
+      div class="col-lg-6 col-md-8 mx-auto"
+        h1 class="fw-light" Rails Basecamp
+        p class="lead text-muted"
+          | Rails Basecamp provides the base for the any project. You can build any sort of application from here.
+          | It provides user authentication using rails Devise gem, authorization using Pundit, has Bootsrtap 5, Slim
+          | and Stimulus JS configured for frontend development also simple_forms are included in it.
+          | It uses Postgres as a backend.
+        p
+          a href="#" class="btn btn-outline-success my-2" Main call to action

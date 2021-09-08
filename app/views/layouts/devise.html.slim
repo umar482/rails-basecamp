@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    = render 'layouts/common/head'
+  body
+    div.body.vh-100.bg-success
+      div.form-signin
+        div.text-center.pe-3
+          h1.text-light.text-opacity-75 Rails Basecamp
+          div.shadow-lg.bg-dark.py-3
+            = yield
+
